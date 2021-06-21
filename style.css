@@ -1,0 +1,179 @@
+html, body {
+    width: 100%;
+    height:100%;
+  }
+
+  body {
+      background-color : #23d5ab;
+      background-size: 400% 400%;
+   
+  }
+
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+
+
+  .welcome_text {
+    width: 400px;
+  }
+
+
+  .form input,
+  .form button {
+    display: block;
+    width: 100%;
+  }
+
+  .form input {
+    color: #fff;
+    font-size: 15px;
+    /* text-align: center; */
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+  }
+
+  .form input:focus {
+    outline: none;
+  }
+
+  .form button {
+    padding: 20px 0;
+    border: none;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #000000;
+    font-size: 30px;
+    transition: 0.4s all;
+  }
+
+  .form button:hover {
+      background-color: lightgrey;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    transform: translateX(-8px);
+    transform: translateX(8px);
+    cursor: pointer;
+  }
+
+
+  .quiz_header {
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .quiz_body {
+    padding: 30px 30px;
+    background-color :rgb(0, 0, 0);
+  }
+
+  .quiz_user {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 30px;
+  }
+
+  .quiz_timer {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    height: 100%;
+    width: 100px;
+    size: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  .quiz_body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+  .option_group {
+    list-style-type: none;
+    margin: 30px 0;
+  }
+
+  .option {
+    display: block;
+    width: 300px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: 0.2s all;
+  }
+
+  .option:hover {
+    cursor: pointer;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    border: 2px solid #000000;
+    color: #7ef57a;
+  }
+  .option.active {
+    background-color: #7ef57a;
+    color: #fff;
+  }
+  .btn-next {
+    border: none;
+    padding: 15px 35px;
+    background-color: #7ef57a;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.2s all;
+  }
+
+  .btn-next:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: #7ef57a;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+  .username,
+  .userpoints,
+  .usertime {
+    color: rgb(219, 219, 219);
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+
+  }
+
+  .name{
+border-radius: 200px;
+  }
+
+  .form-control{
+      border-radius: 60px;
+  }
